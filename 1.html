@@ -1,0 +1,197 @@
+
+<div class="page-container container">
+  <div class="row align-items-center">
+    
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="img1 image-anime">
+        <img src="images/about-img.png" alt="" class="img-fluid">
+      </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="img1 image-anime">
+        <img src="images/about-img2.png" alt="" class="img-fluid">
+      </div>
+      <div class="space"></div>
+      <div class="img1 image-anime">
+        <img src="images/about-img3.png" alt="" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12">
+      <div class="all">
+        <div class="about-content">
+          <h5>About Us <img src="images/chevron.png" alt=""></h5>
+        </div>
+        <div class="text">
+          <h1>Empowering Startups with</h1>
+          <h1>Expertise and Passion</h1>
+        </div>
+        <div class="par">
+          <p>
+            We are passionate about helping startups thrive in a competitive market. 
+            Our team of seasoned strategists, designers, and digital marketers are 
+            dedicated to providing innovative solutions that drive real results. 
+            From concept to launch, we are your partners in growth.
+          </p>
+        </div>
+        <div class="area row">
+          <div class="col-6">
+            <ul>
+              <li><img src="images/check.png" alt=""> Innovation</li>
+              <li><img src="images/check.png" alt=""> Collaboration</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><img src="images/check.png" alt=""> Excellence</li>
+              <li><img src="images/check.png" alt=""> Integrity</li>
+            </ul>
+          </div>
+        </div>
+        <div class="start mt-3">
+          <a href="contact.html">Get Started</a>
+          <div class="book">
+            <a href="about.html">See More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+.img1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  padding: 8px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease;
+}
+
+.img1 img.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.space {
+  height: 20px;
+}
+
+/* About Section */
+.about-content h5 {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  background: #E1EFFE;
+  border-radius: 30px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+.text h1 {
+  color: #090B0E;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-top: 10px;
+}
+
+.par p {
+  color: #6B7280;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.area ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.area ul li {
+  font-size: 15px;
+  color: #6B7280;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.area ul li img {
+  width: 18px;
+}
+
+/* Buttons */
+.start {
+  margin-top: 20px;
+}
+
+.start a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background: #1C64F2;
+  padding: 14px 22px;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.start a:hover {
+  background: #000;
+}
+
+.book a {
+  margin-left: 12px;
+  color: #090B0E;
+  border: 1px solid #D1D5DB;
+  padding: 14px 22px;
+  border-radius: 9999px;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.book a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .text h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 24px;
+  }
+  .par p {
+    font-size: 15px;
+  }
+  .area {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .text h1 {
+    font-size: 20px;
+  }
+  .par p {
+    font-size: 14px;
+  }
+}
